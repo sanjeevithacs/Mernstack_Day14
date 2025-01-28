@@ -1,0 +1,47 @@
+//- //- same content as in index.html
+
+//- //- we can use normal html file here
+
+//- //- syntax of 'pug'
+//- doctype html
+//- html(lang="en")
+//-     head
+//-         meta(charset="UTF-8")
+//-         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-         title Document
+//-         link(rel="stylesheet", href="style.css")
+//-     body
+//-         header
+//-             nav
+//-                 ul
+//-                     li
+//-                         a(href="/home") Home
+//-                     li
+//-                         a(href="/about") About
+//-                     li
+//-                         a(href="/contact") Contact
+//-         main welcome to main page    from pug     
+//-         footer Footer content
+
+
+
+
+//- <!-- NOTE: the folder "views" should be named as "views" only -->
+
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+//- AFTER CREATING template.pug
+
+
+//- should use 'extends' to display all home,about,contact
+extends template/template     
+
+block main 
+    main welcome to main page    from pug     
+    p #{data}  
+    //- to access the variable from server.js

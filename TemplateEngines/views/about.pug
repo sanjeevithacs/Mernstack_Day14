@@ -1,0 +1,35 @@
+//- doctype html
+//- html(lang="en")
+//-     head
+//-         meta(charset="UTF-8")
+//-         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+//-         title Document
+//-         link(rel="stylesheet", href="style.css")
+//-     body
+//-         header
+//-             nav
+//-                 ul
+//-                     li
+//-                         a(href="/home") home
+//-                     li
+//-                         a(href="/about") About
+//-                     li
+//-                         a(href="/contact") contact
+//-         main welcome to about page    from pug     
+//-         footer Footer content
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+//- AFTER CREATING template.pug
+
+
+extends template/template     
+
+block main 
+    main welcome to about page    from pug   
+     
+    each ar in array 
+        p #{ar}
+    //- to access array from server.js 
